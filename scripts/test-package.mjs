@@ -1,21 +1,33 @@
 // Install the real tarball in a clean consumer, exercising runtime exports + CLI.
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { access, mkdtemp, mkdir, writeFile, rm } from 'node:fs/promises';
+import { access, mkdtemp, mkdir, readFile, stat, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 const run = promisify(execFile),
   root = process.cwd();
 await mkdir('artifacts', { recursive: true });
-const { stdout } = await run('npm', [
-  'pack',
-  '--ignore-scripts',
-  '--json',
-  '--pack-destination',
-  'artifacts',
-]);
-const [packed] = JSON.parse(stdout);
+const metadata = JSON.parse(await readFile('package.json', 'utf8'));
+const filename = `${metadata.name.replace('@', '').replace('/', '-')}-${metadata.version}.tgz`;
+const archivePath = path.join(root, 'artifacts', filename);
+await rm(archivePath, { force: true });
+await run('npm', ['pack', '--ignore-scripts', '--json', '--pack-destination', 'artifacts']);
+// npm 10 can interleave prepare output into --json stdout. The artifact itself
+// is the contract, so inspect its entries rather than parsing lifecycle logs.
+const { stdout: listing } = await run('tar', ['-tzf', archivePath]);
+const files = listing
+  .trim()
+  .split('\n')
+  .filter((name) => !name.endsWith('/'))
+  .map((name) => ({ path: name.replace(/^package\//, '') }));
+const fileStats = await Promise.all(files.map((file) => stat(path.join(root, file.path))));
+const packed = {
+  filename,
+  files,
+  size: (await stat(archivePath)).size,
+  unpackedSize: fileStats.reduce((sum, file) => sum + file.size, 0),
+};
 for (const file of [
   'LICENSE',
   'NOTICE',
