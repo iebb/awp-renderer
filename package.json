@@ -1,0 +1,104 @@
+{
+  "name": "awp-renderer",
+  "version": "0.1.0",
+  "description": "JSON to Apple Wallet pass pixels. React component, JavaScript API, and a Mac rendering CLI with a local playground.",
+  "license": "MIT",
+  "author": "iebb",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "bin": {
+    "awp-renderer": "bin/awp-renderer.mjs"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.js"
+    },
+    "./server": {
+      "types": "./dist/server/index.d.ts",
+      "import": "./dist/server/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "bin",
+    "native",
+    "playground",
+    "examples",
+    "docs",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iebb/awp-renderer.git"
+  },
+  "homepage": "https://github.com/iebb/awp-renderer#readme",
+  "bugs": {
+    "url": "https://github.com/iebb/awp-renderer/issues"
+  },
+  "keywords": [
+    "apple-wallet",
+    "pkpass",
+    "passkit",
+    "react",
+    "pass-designer",
+    "renderer",
+    "cli"
+  ],
+  "scripts": {
+    "build": "tsc && vite build --config web/vite.config.ts",
+    "typecheck": "tsc --noEmit && tsc -p web/tsconfig.json",
+    "test": "node --test tests/*.test.mjs",
+    "test:png": "python3 tests/test_png_crop.py && python3 tests/test_compare.py",
+    "test:native": "node scripts/verify-native.mjs",
+    "test:package": "node scripts/test-package.mjs",
+    "check": "npm run format:check && npm run typecheck && npm test && npm run test:package",
+    "dev": "vite --config web/vite.config.ts",
+    "start": "node bin/awp-renderer.mjs serve",
+    "prepare": "npm run build",
+    "prepack": "npm run build",
+    "marketing": "node scripts/marketing.mjs",
+    "test:native-startup": "node scripts/test-startup.mjs",
+    "format": "prettier --write src web bin scripts tests/*.mjs *.json *.md docs/*.md .github/workflows/*.yml",
+    "format:check": "prettier --check src web bin scripts tests/*.mjs *.json *.md docs/*.md .github/workflows/*.yml"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "prettier": "^3.9.10",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

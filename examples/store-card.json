@@ -1,0 +1,41 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.example.awp",
+  "teamIdentifier": "EXAMPLE123",
+  "serialNumber": "awp-synthetic-store-card",
+  "organizationName": "AWP Studio",
+  "description": "Synthetic AWP Renderer demo",
+  "foregroundColor": "rgb(255,255,255)",
+  "labelColor": "rgb(228,218,242)",
+  "logoText": "MONOGRAM / REWARDS",
+  "backgroundColor": "rgb(66,61,73)",
+  "storeCard": {
+    "primaryFields": [
+      {
+        "key": "points",
+        "label": "YOUR POINTS",
+        "value": 2480,
+        "numberStyle": "PKNumberStyleDecimal"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "name",
+        "label": "MEMBER",
+        "value": "Sofia Sato"
+      },
+      {
+        "key": "tier",
+        "label": "STATUS",
+        "value": "Gold"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "awp:synthetic-store-card",
+      "messageEncoding": "iso-8859-1"
+    }
+  ]
+}

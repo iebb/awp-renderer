@@ -1,0 +1,40 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.example.awp",
+  "teamIdentifier": "EXAMPLE123",
+  "serialNumber": "awp-synthetic-coupon",
+  "organizationName": "AWP Studio",
+  "description": "Synthetic AWP Renderer demo",
+  "foregroundColor": "rgb(255,255,255)",
+  "labelColor": "rgb(255,224,204)",
+  "logoText": "FIELD / COFFEE",
+  "backgroundColor": "rgb(171,87,34)",
+  "coupon": {
+    "primaryFields": [
+      {
+        "key": "offer",
+        "label": "YOUR NEXT CUP",
+        "value": "On the house"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "for",
+        "label": "FOR",
+        "value": "Sofia Sato"
+      },
+      {
+        "key": "until",
+        "label": "VALID UNTIL",
+        "value": "31 DEC 2027"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatPDF417",
+      "message": "AWP COFFEE EXAMPLE",
+      "messageEncoding": "iso-8859-1"
+    }
+  ]
+}

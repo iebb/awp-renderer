@@ -1,0 +1,55 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.example.awp",
+  "teamIdentifier": "EXAMPLE123",
+  "serialNumber": "awp-synthetic-poster",
+  "organizationName": "AWP Studio",
+  "description": "Synthetic AWP Renderer demo",
+  "foregroundColor": "rgb(255,255,255)",
+  "labelColor": "rgb(201,211,247)",
+  "logoText": "ATELIER / ACCESS",
+  "backgroundColor": "rgb(39,45,65)",
+  "preferredStyleSchemes": [
+    "posterGeneric",
+    "generic"
+  ],
+  "posterGeneric": {
+    "headerFields": [
+      {
+        "key": "status",
+        "label": "ACCESS",
+        "value": "ALL DAY"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "name",
+        "label": "MEMBER",
+        "value": "Sofia Sato"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "studio",
+        "label": "STUDIO",
+        "value": "Tokyo / 04"
+      }
+    ],
+    "footerFields": [
+      {
+        "key": "message",
+        "label": "WELCOME TO",
+        "value": "A place to make things."
+      }
+    ]
+  },
+  "generic": {
+    "primaryFields": [
+      {
+        "key": "name",
+        "label": "MEMBER",
+        "value": "Sofia Sato"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.example.awp",
+  "teamIdentifier": "EXAMPLE123",
+  "serialNumber": "awp-synthetic-event",
+  "organizationName": "AWP Studio",
+  "description": "Synthetic AWP Renderer demo",
+  "foregroundColor": "rgb(255,255,255)",
+  "labelColor": "rgb(236,205,246)",
+  "logoText": "FORM / 2027",
+  "backgroundColor": "rgb(89,48,100)",
+  "eventTicket": {
+    "primaryFields": [
+      {
+        "key": "event",
+        "label": "AN EVENING OF",
+        "value": "Modern Forms"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "venue",
+        "label": "VENUE",
+        "value": "The Glasshouse"
+      },
+      {
+        "key": "date",
+        "label": "DATE",
+        "value": "18 JUN 2027"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "section",
+        "label": "SECTION",
+        "value": "A"
+      },
+      {
+        "key": "row",
+        "label": "ROW",
+        "value": "04"
+      },
+      {
+        "key": "seat",
+        "label": "SEAT",
+        "value": "12"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "awp:synthetic-event",
+      "messageEncoding": "iso-8859-1"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+playground/
+artifacts/
+*.tgz
+.DS_Store
+.env*
+!.env.example
+__pycache__/

@@ -1,0 +1,65 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.example.awp",
+  "teamIdentifier": "EXAMPLE123",
+  "serialNumber": "awp-synthetic-boarding",
+  "organizationName": "AWP Studio",
+  "description": "Synthetic AWP Renderer demo",
+  "foregroundColor": "rgb(255,255,255)",
+  "labelColor": "rgb(187,197,227)",
+  "logoText": "NORTH / AIR",
+  "backgroundColor": "rgb(30,32,42)",
+  "boardingPass": {
+    "transitType": "PKTransitTypeAir",
+    "headerFields": [
+      {
+        "key": "flight",
+        "label": "FLIGHT",
+        "value": "NA 204"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "from",
+        "label": "TOKYO",
+        "value": "HND"
+      },
+      {
+        "key": "to",
+        "label": "SAN FRANCISCO",
+        "value": "SFO"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "name",
+        "label": "PASSENGER",
+        "value": "SOFIA SATO"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "gate",
+        "label": "GATE",
+        "value": "108"
+      },
+      {
+        "key": "seat",
+        "label": "SEAT",
+        "value": "12A"
+      },
+      {
+        "key": "boarding",
+        "label": "BOARDING",
+        "value": "17:30"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatAztec",
+      "message": "AWP EXAMPLE BOARDING PASS",
+      "messageEncoding": "iso-8859-1"
+    }
+  ]
+}

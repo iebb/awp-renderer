@@ -1,0 +1,3 @@
+docs/assets/*.svg linguist-generated=true
+docs/assets/*.png binary
+package-lock.json linguist-generated=true

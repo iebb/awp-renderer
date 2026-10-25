@@ -1,0 +1,162 @@
+{
+  "testedAt": "2026-10-25T04:11:58.594Z",
+  "concurrency": 1,
+  "scope": "Pass Designer build 28, macOS 27, 4x, System language; synthetic examples",
+  "total": 24,
+  "passed": 24,
+  "results": [
+    {
+      "id": "membership-front-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "membership-front-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "membership-watch-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "membership-watch-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "boarding-front-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "boarding-front-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "boarding-watch-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "boarding-watch-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "event-front-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "event-front-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "event-watch-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "event-watch-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "coupon-front-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "coupon-front-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "coupon-watch-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "coupon-watch-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "store-card-front-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "store-card-front-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "store-card-watch-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "store-card-watch-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "poster-front-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "poster-front-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "poster-watch-baseline",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    },
+    {
+      "id": "poster-watch-200k",
+      "ok": true,
+      "changedPixels": 0,
+      "colorMetadataEqual": true
+    }
+  ],
+  "environment": {
+    "macOS": "27.0 (26A428)",
+    "architecture": "arm64",
+    "passDesignerBuild": "28",
+    "node": "26.3.1",
+    "captureScale": 4,
+    "language": "System",
+    "extensionSha256": "ee2ea282cb5f59ba13139ac881e0e91ed3b678aea60e834af26ce335f3cf2f8b"
+  }
+}

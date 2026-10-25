@@ -1,0 +1,15 @@
+AWP Renderer is independent open-source software, not an Apple product.
+
+The MIT license applies to this project's own code, synthetic examples, and
+marketing artwork. Apple software, frameworks, fonts, templates, trademarks,
+and other third-party materials retain their respective ownership and terms.
+No Apple binaries, fonts, or template artwork are distributed in this package.
+
+The native bridge uses non-public Apple interfaces in a separately installed
+Pass Designer app and macOS frameworks. Users supply that installation. The
+integration may need updates when Apple changes those interfaces.
+
+JSZip and other installed dependencies retain their own licenses, supplied in
+their packages. Native previews in documentation depict this project's own
+fictional pass data. They are screenshots of local rendering output, not
+bundled copies of Apple's renderer or assets.

@@ -1,0 +1,48 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.example.awp",
+  "teamIdentifier": "EXAMPLE123",
+  "serialNumber": "awp-synthetic-membership",
+  "organizationName": "AWP Studio",
+  "description": "Synthetic AWP Renderer demo",
+  "foregroundColor": "rgb(255,255,255)",
+  "labelColor": "rgb(202,213,255)",
+  "logoText": "ATELIER / MEMBERS",
+  "backgroundColor": "rgb(40,57,113)",
+  "generic": {
+    "primaryFields": [
+      {
+        "key": "name",
+        "label": "MEMBER",
+        "value": "Sofia Sato"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "tier",
+        "label": "LEVEL",
+        "value": "Founding member"
+      },
+      {
+        "key": "id",
+        "label": "MEMBER NO.",
+        "value": "0084"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "since",
+        "label": "MEMBER SINCE",
+        "value": "2026"
+      }
+    ]
+  },
+  "barcodes": [
+    {
+      "format": "PKBarcodeFormatQR",
+      "message": "awp-renderer:synthetic-member-0084",
+      "messageEncoding": "iso-8859-1",
+      "altText": "0084  •  ATELIER"
+    }
+  ]
+}
